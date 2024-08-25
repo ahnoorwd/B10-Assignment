@@ -26,6 +26,8 @@
             clifford: '#da373d',
             customGray: 'rgba(30, 30, 30)',
             'custom-green': 'rgba(171, 239, 95, 0.4)',
+            
+       
           }
         }
       }
@@ -37,7 +39,16 @@
     .font-Manrope {
       font-family: "Manrope", sans-serif;
     }
+   .bg{
+    background-image: url(./assets/bg.jpg);
+    background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+ 
   
+    
+   }
   </style>
 
 </head>
@@ -45,8 +56,8 @@
 <body class="font-Manrope ">
   <!-- Navbar and Banner section -->
   <header
-    class=" container mx-auto  border border-5 border-blue-800 pt-12 bg-gradient-to-r from-gray-50 to-gray-50 mb-10 ">
-    <nav class="px-5  border border-5 border-red-800   md:px-5">
+    class=" container mx-auto  pt-12 bg-gradient-to-r from-gray-50 to-gray-50 mb-10 ">
+    <nav class="px-5  md:px-5">
       <div class="navbar">
         <div class="navbar-start">
           <div>
@@ -87,7 +98,7 @@
     </nav>
 
     <!-- A burn house section -->
-    <section class="mt-12 border border-5 border-red-800  mx-auto md:px-10">
+    <section class="mt-12  mx-auto md:px-10">
       <div class="flex flex-col justify-center items-center ">
         <div>
           <img class="lg:px-36 px-6" src="./assets/banner.png" alt="">
@@ -119,7 +130,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 w-full max-w-[1170px] mx-auto gap-6 p-6 ">
         <div class=" flex-1 flex justify-center items-center relative md:mt-20 md:ml-10">
           
-          <div class="hidden md:block absolute top-[-50px] md:-left-[500px] right-0 mx-auto">
+          <div class="hidden md:block absolute top-[-40px] md:-left-[500px] right-0 mx-auto">
             <img src="./assets/Vector.png" alt="Vector image" class="mx-auto">
           </div>
       
@@ -130,10 +141,10 @@
               </h1>
             </div>
       
-            <h1 class="font-bold md:text-5xl text-2xl md:text-start text-center">We design thoughtful, livable spaces</h1>
-            <p class="font-bold text-gray-600 md:text-start text-center">The farmhouse enchants with its mix of rural charm and contemporary elegance, showcasing aged wood and polished metal details.</p>
+            <h1 class="font-bold md:text-4xl text-2xl md:text-start text-center">We design thoughtful, <br> livable spaces</h1>
+            <p class="font-bold text-gray-600 md:text-start text-center py-6">The farmhouse enchants with its mix of rural charm and contemporary elegance, showcasing aged wood and polished metal details.</p>
             
-            <div class="bg-white border border-gray-200 rounded-xl flex space-x-5 p-3">
+            <div class="bg-white border border-gray-200 rounded-xl flex space-x-5 p-3 py-6">
               <div><img src="./assets/commercial.png" alt="Commercial"></div>
               <div>
                 <h1 class="font-extrabold text-xl">Commercial</h1>
@@ -141,7 +152,7 @@
               </div>
             </div>
       
-            <div class="bg-white border border-gray-200 rounded-xl flex space-x-5 p-3">
+            <div class="bg-white border border-gray-200 rounded-xl flex space-x-5 p-3 py-6 ">
               <div><img src="./assets/residential.png" alt="Residential"></div>
               <div>
                 <h1 class="font-extrabold text-xl">Residential</h1>
@@ -153,7 +164,7 @@
         </div>
       
         <div class="flex-1 flex justify-center items-center md:mt-40 mt-6 md:ml-10 ">
-          <img class="img-center md:max-w-[80%]" src="./assets/Rectangle.png" alt="Rectangle image">
+          <img class="img-center md:max-w-[100%]" src="./assets/Rectangle.png" alt="Rectangle image">
         </div>
       </div>
 
@@ -205,125 +216,228 @@
 
      
    <!-- our latest project  -->
-   <section class="md:bg-white bg-[#E9E9E9] mt-12 container mx-auto">
-    <!-- text-part  -->
-    <div class="space-y-3 text-center py-3 p-3">
-      <h1 class="bg-custom-green rounded-xl font-bold inline p-1">
-        <i class="fa-solid fa-arrow-right"></i> Explore Our Latest Works
-      </h1>
-      <h1 class="font-bold text-[40px] text-[#212121]">Our Latest Portfolio</h1>
-      <p class="text-[#494949] font-medium md:w-[678.26px] mx-auto">
-        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+   <section class="bg-[#F4F4F4] md:bg-[#FFFFFF] px-6 md:px-0">
+    <!-- Text -->
+    <div class="space-y-6 flex flex-col items-center justify-center md:pt-12">
+      <button
+        class="btn bg-custom-green text-black hover:bg-gray-200 rounded-full font-bold shadow-md md:px-6 md:py-2 flex items-center px-3 py-1 md:mx-0 self-center">
+        <i class="fa-solid fa-arrow-right h-4 w-4 flex items-center justify-center mr-1"></i> Explore our Latest works
+      </button>
+      <!-- Heading -->
+      <h1 class="md:text-4xl lg:text-4xl text-2xl text-center font-bold leading-tight">Our Latest Portfolio</h1>
+      <!-- Description -->
+      <p class="font-medium text-lg text-center">The barn house captivates with its blend of rustic charm and modern
+        sophistication, <span class="hidden lg:inline"><br></span> featuring weathered wood, sleek metal accents.
       </p>
     </div>
-  
-    <!-- image-part1 -->
-    <div class="mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 container mx-auto">
-      <div class="col-span-2 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 md:border-2 border-gray-200 p-3 bg-white rounded-xl">
-        <div class="p-2 flex-1">
-          <img class="md:border-2 border-gray-300 border-dotted w-full md:h-[100%] object-cover rounded-xl" src="./assets/img1.png" alt="">
-        </div>
-        <div class="p-3 space-y-4 flex-1 text-left md:pt-12">
-          <h1 class="text-[#494949] font-extrabold text-2xl">Commercial</h1>
-          <p class="font-semibold text-[#737373]">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.</p>
-          <h1 class="font-extrabold text-[#212121] text-[20px]">
-            View Details<span><i class="fa-solid fa-arrow-right bg-[#ABEF5F] ml-2 rounded-full p-2 -rotate-45"></i></span>
-          </h1>
+   
+     <!-- CARDS -->
+     <div class="md:container mx-auto grid grid-cols-12 gap-6 pt-8">
+
+      <!-- Card-1 -->
+      <div
+        class="col-span-12 md:col-span-8 bg-[#FFFFFF] flex flex-col md:flex-row border border-gray-200 rounded-xl p-6 gap-5 order-1">
+        <!-- Image -->
+        <img class="md:h-[179.3px]" src="./assets/img1.png" alt="">
+        <!-- Text -->
+        <div class="space-y-4 flex items-stretch justify-center flex-col">
+          <h4 class="font-extrabold text-2xl">Commercial</h4>
+          <p class="text-gray-700 font-medium text-lg">The barn house captivates with its blend of rustic charm
+            and
+            modern. The barn house captivates with its.
+          </p>
+          <p class="text-xl font-extrabold">View Details <span class="pl-2"><i
+                class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45"></i></span>
+          </p>
         </div>
       </div>
-      
-      <div class="md:border-2 border-gray-300 border-dotted flex justify-center items-center bg-white p-6 rounded-xl">
-        <img class="md:border-2 border-gray-300 border-dotted w-full h-full object-cover rounded-xl" src="./assets/img2.png" alt="">
+
+      <!-- Card-2 -->
+      <div
+        class="col-span-12 md:col-span-4 bg-[#FFFFFF] flex flex-col md:flex-row border border-gray-200 rounded-xl p-6 order-2">
+        <img class="md:w-full md:h-[179.3px]" src="./assets/img2.png" alt="">
+      </div>
+
+      <!-- Card-3 -->
+      <div
+        class="col-span-12 md:col-span-3 bg-[#FFFFFF] flex flex-col md:flex-row border border-gray-200 rounded-xl p-6 order-5 md:order-3">
+        <img class="md:w-full md:h-[179.3px]" src="./assets/img3.png" alt="">
+      </div>
+
+      <!-- Card-4 -->
+      <div
+        class="col-span-12 md:col-span-6 bg-[#FFFFFF] flex flex-col md:flex-row border border-gray-200 rounded-xl p-6 gap-5 order-3 md:order-4">
+        <!-- Image -->
+        <img class="md:h-[179.3px]" src="./assets/img4.png" alt="">
+        <!-- Text -->
+        <div class="space-y-4 pt-2">
+          <h4 class="font-extrabold text-2xl">Commercial</h4>
+          <p class="text-gray-700 font-medium text-lg">The barn house captivates The barn house captivates </p>
+          <p class="text-xl font-extrabold">View Details <span class="pl-2"><i
+                class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45"></i></span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Card-5 -->
+      <div
+        class="col-span-12 md:col-span-3 bg-[#FFFFFF] flex flex-col md:flex-row border border-gray-200 rounded-xl p-6 order-4 md:order-5">
+        <img class="md:w-full md:h-[179.3px]" src="./assets/img5.png" alt="">
+      </div>
+
+      <!-- Card-6 -->
+      <div
+        class="col-span-12 md:hidden bg-[#FFFFFF] flex flex-col border border-gray-200 rounded-xl p-6 order-last">
+        <img src="./assets/img5.png" alt="">
       </div>
     </div>
-  
-    <!-- image-part-2 -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6 container mx-auto">
-      <!-- First Image (will be last on small screens) -->
-      <div class="md:border-2 border-gray-300 border-dotted rounded-xl flex justify-center items-center bg-white p-6 order-last md:order-none">
-        <img class="md:border-2 border-gray-300 border-dotted w-full h-full object-cover rounded-xl" src="./assets/img3.png" alt="">
-      </div>
-      
-      <!-- Middle Content -->
-      <div class="col-span-2 flex flex-col md:flex-row space-y-6 md:space-y-6 md:space-x-6 md:border-2 border-gray-200 md:p-3 p-5 bg-white rounded-xl">
-        <div class="flex-1">
-          <img class="md:border-2 border-gray-300 border-dotted md:w-[100%] w-[90%] md:h-[90%] mt-3 object-cover rounded-xl" src="./assets/img4.png" alt="">
-        </div>
-        <div class="p-2 space-y-3 flex-1  md:text-left">
-          <h1 class="text-[#494949] font-extrabold text-2xl">Commercial</h1>
-          <p class="font-semibold text-[#737373]">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.</p>
-          <h1 class="font-extrabold text-[#212121] text-[20px]">
-            View Details<span><i class="fa-solid fa-arrow-right bg-[#ABEF5F] ml-2 rounded-full p-2 -rotate-45"></i></span>
-          </h1>
-        </div>
-      </div>
-      
-      <!-- Last Image (will be first on small screens) -->
-      <div class="md:border-2 border-gray-300 border-dotted rounded-xl flex justify-center items-center bg-white p-6 order-first md:order-none">
-        <img class="md:border-2 border-gray-300 border-dotted w-full h-full object-cover rounded-xl" src="./assets/img5.png" alt="">
-      </div>
-    </div>
-  
-    <!-- New Div (visible only on small screens) -->
-    <div class="md:hidden md:border-2 border-gray-300 border-dotted rounded-xl flex justify-center items-center bg-white p-6">
-      <img class="md:border-2 border-gray-300 border-dotted  w-[80%] h-[80%] object-cover rounded-xl" src="./assets/img5.png" alt="">
-    </div>
-  </section>
+
+    </section>
 
 
 
-  <!-- my-project  -->
+  <!-- my-project Unique section  -->
   <section class="mt-6 container mx-auto">
     <div class="text-center">
-      <h1 class="mb-2 text-5xl font-extrabold">Best Deal!!!</h1>
-      <p class="font-medium text-gray-500">The current Periods These Types Of Building Demand's Are So Much. <br> It's Your Turn Choose Your Dream Here.</p>
+      <h1 class="mb-2 text-5xl font-extrabold text-gray-800">Best Deal!!!</h1>
+      <p class="font-medium text-gray-600">The current Periods These Types Of Building Demand's Are So Much. <br> It's Your Turn Choose Your Dream Here.</p>
     </div>
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-3 mb-6 md:p-6 p-6">
-    
-      <div class="space-y-3">
-        <img src="./assets/article3.png" alt="" class="w-full h-[200px] object-cover rounded-xl">
-        <!-- Applying whitespace-nowrap to keep the text on one line -->
-        <h1 class="font-bold text-xl whitespace-nowrap">Pattern:> Duplex-House</h1>
-        <h1 class="font-semibold">Duration:>6-8 Month</h1>
-        <h1 class="font-medium">Budget:>10 laks</h1>
-        <h1><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i></h1>
+      
+      <!-- Card 1 -->
+      <div class="space-y-3 bg-white rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 p-4">
+        <img src="./assets/article3.png" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
+        <div class="p-4">
+          <h1 class="font-bold text-xl text-gray-800">Pattern: Duplex-House</h1>
+          <h2 class="font-semibold text-gray-700">Duration: 6-8 Months</h2>
+          <h3 class="font-medium text-gray-600">Budget: 10 laks</h3>
+          <div class="flex items-center space-x-1 mt-2">
+            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i class="fa-solid fa-star text-yellow-400"></i>
+          </div>
+        </div>
       </div>
-    
-      <div class="space-y-3">
-        <img src="./assets/triplex.jpg" alt="" class="w-full h-[200px] object-cover rounded-xl">
-        <h1 class="font-bold text-xl whitespace-nowrap">Pattern:> Triplex-House</h1>
-        <h1 class="font-semibold">Duration:>6-9 Month</h1>
-        <h1 class="font-medium">Budget:>15 laks</h1>
-        <h1><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i></h1>
+  
+      <!-- Card 2 -->
+      <div class="space-y-3 bg-white rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 p-4">
+        <img src="./assets/triplex.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
+        <div class="p-4">
+          <h1 class="font-bold text-xl text-gray-800">Pattern: Triplex-House</h1>
+          <h2 class="font-semibold text-gray-700">Duration: 6-9 Months</h2>
+          <h3 class="font-medium text-gray-600">Budget: 15 laks</h3>
+          <div class="flex items-center space-x-1 mt-2">
+            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i class="fa-solid fa-star text-yellow-400"></i>
+          </div>
+        </div>
       </div>
-    
-      <div class="space-y-3">
-        <img src="./assets/duplex.jpg" alt="" class="w-full h-[200px] object-cover rounded-xl">
-        <h1 class="font-bold text-xl whitespace-nowrap">Pattern:> Duplex-House</h1>
-        <h1 class="font-semibold">Duration:>6-8 Month</h1>
-        <h1 class="font-medium">Budget:>10 laks</h1>
-        <h1><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i></h1>
+  
+      <!-- Card 3 -->
+      <div class="space-y-3 bg-white rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 p-4">
+        <img src="./assets/duplex.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
+        <div class="p-4">
+          <h1 class="font-bold text-xl text-gray-800">Pattern: Duplex-House</h1>
+          <h2 class="font-semibold text-gray-700">Duration: 6-8 Months</h2>
+          <h3 class="font-medium text-gray-600">Budget: 10 laks</h3>
+          <div class="flex items-center space-x-1 mt-2">
+            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i class="fa-solid fa-star text-yellow-400"></i>
+          </div>
+        </div>
       </div>
-    
-      <div class="space-y-3">
-        <img src="./assets/article1.png" alt="" class="w-full h-[200px] object-cover rounded-xl">
-        <h1 class="font-bold text-xl whitespace-nowrap">Pattern:> Triplex-House</h1>
-        <h1 class="font-semibold">Duration:>6-9 Month</h1>
-        <h1 class="font-medium">Budget:>15 laks</h1>
-        <h1><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i></h1>
+  
+      <!-- Card 4 -->
+      <div class="space-y-3 bg-white rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 p-4">
+        <img src="./assets/article1.png" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
+        <div class="p-4">
+          <h1 class="font-bold text-xl text-gray-800">Pattern: Triplex-House</h1>
+          <h2 class="font-semibold text-gray-700">Duration: 6-9 Months</h2>
+          <h3 class="font-medium text-gray-600">Budget: 15 laks</h3>
+          <div class="flex items-center space-x-1 mt-2">
+            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i class="fa-solid fa-star text-yellow-400"></i>
+            <i class="fa-solid fa-star text-yellow-400"></i>
+          </div>
+        </div>
       </div>
-    
+  
     </div>
   </section>
+
+  <!-- let's discuss part  -->
+
+  <section class="bg mb-6 container mx-auto">
+   <div class="text-center py-6">
+    <h1 class="bg-custom-green rounded-xl font-bold inline p-2">
+      <i class="fa-solid fa-arrow-right"></i> Let's Connected
+    </h1>
+   <h1 class="font-bold text-[40px] text-[#212121]">Lets Discuss Next Project </h1>
+   <p class="font-medium text-gray-500 md:p-0 p-3">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+   </div>
+
+
+   <!-- form-patr  -->
+   <div class="max-w-2xl mx-auto md:p-0 p-6 ">
+    <form class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <!-- First Name -->
+      <div class="form-control">
+        <input type="text" placeholder="First Name*" class="input rounded-xl w-full" />
+      </div>
+      <!-- Last Name -->
+      <div class="form-control">
+        <input type="text" placeholder="Last Name*" class="input rounded-xl w-full" />
+      </div>
+      <!-- Phone Number -->
+      <div class="form-control">
+        <input type="text" placeholder="Phone Number*" class="input rounded-xl w-full" />
+      </div>
+      <!-- Email Number -->
+      <div class="form-control">
+        <input type="text" placeholder="Email Number*" class="input rounded-xl w-full" />
+      </div>
+      <!-- Message -->
+      <div class="form-control sm:col-span-2">
+        <textarea placeholder="Write your message here" class="textarea rounded-xl w-full h-32 resize-none"></textarea>
+      </div>
+    </form>
+    <!-- Send Mail Button -->
+    <div class="mt-4">
+      <button class="btn w-full bg-lime-400 text-[#1C1C1C] font-extrabold text-[20px] rounded-xl mb-10">
+        Send Mail
+        <span class="ml-2">✉️</span>
+      </button>
+    </div>
+  </div>
+  </section>
+
+
+ 
+  
+
   </main>
 
   <!-- Footer section -->
   <footer>
    
-   
+    
+    
+    
+    
     
       
+    
+    
+    
+    
+
   </footer>
 
    
